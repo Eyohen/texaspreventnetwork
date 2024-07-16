@@ -13,7 +13,7 @@ const HowItWorks = () => {
 
 
   return (
-    <div className="py-9 px-[4px] md:px-[180px] font-nunito bg-green-200 mt-12">
+    <div className="py-9 px-[4px] md:px-[180px] font-nunito bg-blue-200 mt-12">
       <p className="text-4xl font-bold text-center">How Does It Work</p>
      
 
@@ -47,7 +47,7 @@ const HowItWorks = () => {
           </div>
 
           <div className="flex justify-center">
-          <button onClick={()=> navigate('/freebrowsecommunity')}  className="bg-[#00b300] text-white px-6 py-2 rounded-full mt-9">Explore Courses</button>
+          <button onClick={()=> navigate('/courses')}  className="bg-blue-500 text-white px-6 py-2 rounded-full mt-9">Explore Courses</button>
           </div>
 
 
