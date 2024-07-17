@@ -3,7 +3,7 @@ import man from '../assets/man.jpg'
 
 const Testimonials = () => {
   return (
-    <div className='bg-gray-300 px-9 py-6'>
+    <div className='bg-gray-100 px-9 py-6'>
          <p className='text-3xl font-semibold'>Testimonials</p>
          <p className='max-w-[400px]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
          <div>

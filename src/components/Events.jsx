@@ -2,7 +2,7 @@ import React from 'react'
 
 const Events = () => {
   return (
-    <div className='bg-gray-300 py-6 px-16'>
+    <div className='bg-gray-100 py-6 px-16'>
         <p className='text-3xl font-semibold'>Events</p>
 
 
