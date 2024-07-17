@@ -15,8 +15,15 @@ import Events from '../components/Events'
 import Testimonials from '../components/Testimonials'
 
 import NextStep from '../components/NextStep'
+import BlogCard from '../components/BlogCard'
 
 const Home = () => {
+
+  const blogs = [
+    { id:1 },
+    { id:2 },
+    { id:3 },
+ ]
 
   const navigate = useNavigate();
   return (
@@ -36,33 +43,8 @@ const Home = () => {
       </div>
       <UnderHero />
 
-{/* <div className='flex justify-center gap-x-[100px] mt-24'> 
-  <div>
-  <p className='text-5xl font-bold'>Amazing educational Support</p>
-  <p className='text-5xl font-bold mt-2'>programs</p>
-  <p className='max-w-[500px] mt-9 text-lg'>Morbi dapibus erat magna, et maximus orci mattis venenatis. Vivamus dolor purus, varius et neque at, pulvinar condimentum ipsum. Etiam semper purus in nisl commodo, quis sodales quam sagittis</p>
 
-  
-  <div className="md:flex gap-x-0 md:gap-x-9 md:space-y-0 space-y-4 mt-9 text-center ">
-<div>
-  <button onClick={()=> navigate('/freebrowsecommunity')} className="bg-blue-700 text-white rounded-full px-6 py-4 font-semibold text-xl">
-    Browse Courses
-  </button>
-</div>
-
-<div>
-  <button onClick={()=> navigate('/freeregistervisibility')} className="border border-blue-700 rounded-full px-6 py-4 text-blue-800 font-semibold text-xl">
-    Try for free
-  </button>
-</div>
-</div>
-  </div>
-
-  <img src={domestic} className='w-[450px] rounded-md' />
-</div> */}
-
-
-<div className='px-[225px] py-16'>
+<div className='px-[225px] pt-[120px]'>
 <NextStep />
 </div>
 
@@ -145,6 +127,15 @@ const Home = () => {
 <div className='flex justify-center gap-x-9 mt-9'>
   <Events /> <Testimonials />
 </div>
+
+
+<p className='text-center font-bold text-[27px] mt-12'>Read Latest Articles</p>
+<p className='text-gray-500 w-[320px] mx-auto'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+<div className='flex gap-x-[45px] justify-center mt-12'>
+  {blogs.map(() => (<BlogCard/>))}
+
+</div>
+
 
 <div className=''>
 <Faq />
