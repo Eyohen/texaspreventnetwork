@@ -78,7 +78,7 @@ const CourseDetails = () => {
   <p className='px-4 font-semibold'>Course Features</p>
 
   <p className='px-4'>Lectures : 8</p>
-  <p className='px-4'>Quizzes : 4 hours</p>
+  <p className='px-4'>Quizzes : 4 </p>
   <p className='px-4'>Duration : 4 hours</p>
   <p className='px-4'>Language : English</p>
   <p className='px-4'>Test : Yes</p>

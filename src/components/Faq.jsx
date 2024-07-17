@@ -30,14 +30,22 @@ const Faq = () => {
 
   return (
     <div className="bg-white px-4 mx-auto lg:px-[300px] py-9 font-nunito mt-9">
-      <p className="text-4xl font-bold text-center md:tracking-wide">
-        Frequently asked questions
-      </p>
 
-<div className="flex flex-col gap-y-3 mt-6">
+      
+<div className="flex justify-center gap-x-16 mt-6">
+
+<div>
+      <p className="text-4xl font-semibold text-center md:tracking-wide italic">
+        Frequently <span className="text-violet-600 font-bold text-4xl not-italic">Asked</span>
+      </p>
+      <p className="text-violet-600 font-bold text-4xl">Questions</p>
+      <p className="text-gray-600 font-normal text-md mt-1">Everything you need to know about us </p>
+      </div>
+
+<div className="flex flex-col gap-y-3 mt-0">
 
       <div className="">
-        <button onClick={handleToggle} className="w-full bg-gray-200 rounded-md">
+        <button onClick={handleToggle} className="max-w-[600px] bg-gray-100 rounded-md">
           {toggle ? (
             <div className="flex justify-between  space-x-[94px] px-2 py-4">
               <p className="text-xl font-medium ">
@@ -66,10 +74,10 @@ const Faq = () => {
       </div>
 
       <div className="">
-        <button onClick={handleToggle2} className="w-full bg-gray-200 rounded-md">
+        <button onClick={handleToggle2} className="max-w-[600px] bg-gray-100 rounded-md">
           {toggle2 ? (
             <div className="flex justify-between  space-x-[94px] px-2 py-4">
-              <p className="text-xl font-medium text-left">
+              <p className="text-xl font-medium text-left max-w-[435px]">
               What makes TPN different from other community rehabilitation platforms?
               </p>
               <FiPlus size={24} />
@@ -95,7 +103,7 @@ const Faq = () => {
       </div>
 
       <div className="">
-        <button onClick={handleToggle3} className="w-full bg-gray-200 rounded-md">
+        <button onClick={handleToggle3} className="max-w-[600px] min-w-[570px] bg-gray-100 rounded-md">
           {toggle3 ? (
             <div className="flex justify-between  space-x-[94px] px-2 py-4">
               <p className="text-xl font-medium text-left">
@@ -121,6 +129,8 @@ const Faq = () => {
             </div>
           )}
         </button>
+      </div>
+
       </div>
 
       </div>
