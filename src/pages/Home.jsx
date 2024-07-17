@@ -13,6 +13,8 @@ import UnderHero from '../components/UnderHero'
 import Events from '../components/Events'
 import Testimonials from '../components/Testimonials'
 
+import NextStep from '../components/NextStep'
+
 const Home = () => {
 
   const navigate = useNavigate();
@@ -59,8 +61,8 @@ const Home = () => {
 </div> */}
 
 
-<div className='px-[225px]'>
-<HowItWorks />
+<div className='px-[225px] py-16'>
+<NextStep />
 </div>
 
 
