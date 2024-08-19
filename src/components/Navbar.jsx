@@ -91,7 +91,7 @@ const Navbar = () => {
         </div>
 
         {openPages && <div className='border bg-white py-6 px-4 min-w-[180px] absolute rounded-md z-50 mt-4 left-1/2 transform -translate-x-1/2'>
-            <p className='px-4 py-2 rounded-xl text-lg cursor-pointer'>Courses</p>
+            <Link to={'/courses'}><p className='px-4 py-2 rounded-xl text-lg cursor-pointer'>Courses</p></Link>
             <p className='px-4 py-2 rounded-xl text-lg'>Blog</p>
             <p className='px-4 py-2 rounded-xl text-lg'>About Us</p>
             <p className='px-4 py-2 rounded-xl text-lg'>Contact</p>

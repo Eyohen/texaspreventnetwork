@@ -6,6 +6,7 @@ import Courses from './pages/Courses'
 import About from './pages/About'
 import CategoryDetails from './pages/CategoryDetails'
 import ContactUs from './pages/ContactUs'
+import BlogDetails from './pages/BlogDetails'
 // import Contact from './pages/Contact'
 // import About from './pages/About'
 // import ProductDetails from './pages/ProductDetails'
@@ -29,6 +30,7 @@ const App = () => {
     <Route exact path="/coursedetails" element={<CourseDetails />}/>
     <Route exact path="/courses" element={<Courses/>}/>
     <Route exact path="/categorydetails" element={<CategoryDetails />}/>
+    <Route exact path="/blogdetails" element={<BlogDetails />}/>
     <Route exact path="/aboutus" element={<About/>}/>
     <Route exact path="/contactus" element={<ContactUs/>}/>
     {/* <Route exact path="/login" element={<Login/>}/>

@@ -32,7 +32,7 @@ const Faq = () => {
     <div className="bg-white px-4 mx-auto lg:px-[300px] py-9 font-nunito mt-9">
 
       
-<div className="flex justify-center gap-x-16 mt-6">
+<div className="flex justify-between gap-x-32 mt-6">
 
 <div>
       <p className="text-4xl font-semibold text-center md:tracking-wide italic">

@@ -7,7 +7,7 @@ import { FaStar } from "react-icons/fa";
 import Faq from '../components/Faq'
 import HowItWorks from '../components/HowItWorks'
 import Footer from '../components/Footer'
-import { useNavigate } from 'react-router-dom'
+import { Link,useNavigate } from 'react-router-dom'
 import backgroundImage from '../assets/schoolwork.jpg'
 // import backgroundImage from '../assets/hero2.jpg'
 import UnderHero from '../components/UnderHero'
@@ -132,12 +132,14 @@ const Home = () => {
 <p className='text-center font-bold text-[27px] mt-12'>Read Latest Articles</p>
 <p className='text-gray-500 w-[320px] mx-auto'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
 <div className='flex gap-x-[45px] justify-center mt-12'>
-  {blogs.map(() => (<BlogCard/>))}
+  {blogs.map(() => (
+    <Link to={'/blogdetails'} ><BlogCard/></Link>
+    ))}
 
 </div>
 
 
-<div className=''>
+<div className='flex justify-center'>
 <Faq />
 </div>
 
